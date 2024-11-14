@@ -1,0 +1,60 @@
+# Aliases. Sourced in ~/.bashrc
+
+#alias vi="nano"
+#alias vim="nano"
+
+# less, with syntax highlighting and line numbering
+alias less='LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s" less -R -N'
+
+alias fbplay="mplayer -vo fbdev2"
+alias def="sdcv -u WordNet"
+alias locate='locate -i'
+alias gpg='gpg2'
+alias da='date +"%a %d %b %I:%M"'
+alias xx='xrandr -o normal'
+alias xr='xrandr -o right'
+alias xl='xrandr -o left'
+alias list='dpkg-query -L' # list files in package
+
+# ls
+alias ls='ls -h --color=auto'
+alias l='ls'
+alias lr='ls -R'                 # recursive ls
+alias ll='ls -l'
+alias la='ls -a'
+#alias lx='ll -BX'               # sort by extension
+#alias lz='ll -rS'               # "    "  size, small->large
+alias lt='ll -rt'               # "    "  date, old->new
+#alias lm='la | less'
+alias ping='ping -c 3'
+
+# interactive
+alias ln='ln -i'
+alias cp='cp -i'
+alias mv=' mv -iv'
+alias rm=' rm -Iv --one-file-system'
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chmod --preserve-root'
+
+# color
+alias diff='colordiff'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# typos
+alias sl='ls'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias oops='sudo !!'
+
+# human-readable
+alias df='df -h'
+alias du='du -c -h'
+alias dmesg='dmesg -HL'
+alias mkdir='mkdir -p -v'
+
+# list stuff
+alias functions='set | grep "()"'

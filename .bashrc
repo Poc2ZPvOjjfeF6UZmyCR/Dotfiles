@@ -25,7 +25,7 @@ export GPG_TTY=$(tty)
 
 # export _JAVA_AWT_WM_NONREPARENTING=1
 
-export PATH=~/Projects/bin:~/.local/bin:/opt/idea-IU-221.5080.210/bin:$PATH
+export PATH=~/Projects/bin:~/.local/bin:$PATH
 export LESS='-F -g -i -M -R -S -w -X -z-4'
 
 # Set the Less input preprocessor
